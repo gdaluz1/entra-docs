@@ -69,6 +69,8 @@ Administrators can assign a Conditional Access policy to the following cloud app
 
 > [!IMPORTANT]
 > Applications that are available to Conditional Access have gone through an onboarding and validation process. This list doesn't include all Microsoft apps, as many are backend services and not meant to have policy directly applied to them. If you're looking for an application that is missing, you can contact the specific application team or make a request on [UserVoice](https://feedback.azure.com/d365community/forum/22920db1-ad25-ec11-b6e6-000d3a4f0789).
+>
+> 
 
 ### Office 365
 
@@ -131,6 +133,11 @@ We're continually adding more administrative portals to the list.
 
 > [!NOTE]
 > The Microsoft Admin Portals app applies to interactive sign-ins to the listed admin portals only. Sign-ins to the underlying resources or services like Microsoft Graph or Azure Resource Manager APIs are not covered by this application. Those resources are protected by the [Windows Azure Service Management API](#windows-azure-service-management-api) app. This enables customers to move along the MFA adoption journey for admins without impacting automation that relies on APIs and PowerShell. When you are ready, Microsoft recommends using a [policy requiring administrators perform MFA always](howto-conditional-access-policy-admin-mfa.md) for comprehensive protection.
+>
+> 
+> [!IMPORTANT]
+> When choosing the Admin Portals option, which encompasses the "Microsoft 365 Admin Center," you are specifically addressing the Office 365 Portal with the identifier 00000006-0000-0ff1-ce00-000000000000. This selection targets not only the Microsoft 365 Admin Center but also includes a variety of other dependencies. These dependencies are detailed within the provided list, ensuring a comprehensive understanding of the scope. For further insights into the components and dependencies involved, refer to the Office 365 application contents documentation. 
+
 
 ### Other applications
 
